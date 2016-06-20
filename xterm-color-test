@@ -1,4 +1,5 @@
 # File from Mickie to define terminal colors
+# need to check on new monitor
 
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
