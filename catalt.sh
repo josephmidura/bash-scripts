@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# numberlines - a simple alternative to cat -n, etc
+# numberlines - alternative to cat -n
 
 for filename 
 do
