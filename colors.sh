@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# This file echoes a bunch of colour codes to the terminal to demonstrate
-# what's available. Each line is one colour on black and gray
+# This file echoes a bunch of color codes to the terminal to demonstrate
+# what's available. Each line is one color on black and gray
 # backgrounds, with the code in the middle. Verified to work on white,
-# black, and green BGs.
+# black, and green backgrounds.
 #
 echo " On Light Gray: On Black:"
 echo -e "\033[47m\033[1;37m White \033[0m\
