@@ -1,61 +1,37 @@
-# Last update 9.18.16
-#
-##########  Aliases  ##########
-#
-alias sbash='source ~/.bashrc'          # Re-source this file
-alias svim='source ~/.vimrc'            # Source the .vimrc
-alias ls='ls --color'                   # Give colors to ls command 
-alias ll='ls -l'                        # Long list
-alias llx='ls -l -X'                    # Long list by type
-alias la='ls -a'                        # Show hidden
-alias lla='ls -l -a'                    # Show hidden and perms.
-alias vbash='vim ~/.bashrc'             # Open .bashrc for editing 
-alias vvim='vim ~/.vimrc'               # Open .vimrc for editing
-alias rc="~/run_executables_script.bsh" # 
-alias lx='ls -X'                        # Sort by type
-alias lt='ll -t'                        # Long list sorted by date
-alias cat='cat -n'                      # Line numbers
-alias c='clear'                         #
-alias grep='grep --color'               # Add color to greps
-#
-##########  Shortcuts  ##########
-#
-alias c0='cd ~/web_home/sp11/csce601/hw/00/c'   #
-alias c1='cd ~/web_home/sp11/csce601/hw/01/c'   #
-alias c2='cd ~/web_home/sp11/csce601/hw/02/c'   #
-alias c3='cd ~/web_home/sp11/csce601/hw/03/c'   #
-alias c4='cd ~/web_home/sp11/csce601/hw/04/java'   #
-alias c5='cd ~/web_home/sp11/csce601/hw/05/java'   #
-alias c6='cd ~/web_home/sp11/csce601/hw/06/java'   #
-alias cdh='cd ~/web_home/sp11/csce601/hw'   #
-alias cds='cd ~/web_home/sp11/csce601/hw/hwsolutions/03s/03c'   #
-alias cdt='cd ~/web_home/sp11/csce601/tests'   #
-#
-##########  Function to ls after a cd  ##########
-#cs()
-#{
-#    cd $1;
-#    ls
-#}
-#
-##########  Prompt Stuff  ##########
-#
-export PS1='\n\033[0;32m\]\u@\h \w>\n:: \[\033[0;38m\]'     # green prompt white text
-#export PS1='\n\033[0;33m\]\u@\h \w>\n:: \[\033[0;32m\]'    # yellow prompt green text
-#export PS1='\n\033[31;31m\]\u@\h \w>\n:: \[\033[0;32m\]'   # red prompt green text
-#
-##########  Other Stuff  ##########
-#
-export HISTCONTROL=ignoredumps          # Avoid successive duplicates in command history
-export HISTCONTROL=ignoreboth           # Ignore same successive entries
-HISTFILESIZE=300                        # Set history file to X max entries
-#
-##########  Show the Date After I Log in  ##########
-#
-echo -ne "${red}Today is:\t${cyan}" `date`; echo ""         # Show the date
-#
-##########  Doesn't work in Solaris  ##########
-#
-#COLUMNS=80
-#LINES=24
-#shopt -s checkwinsize
+
+  1 # last update 02/17/18
+  2 
+  3 alias sbash='source ~/.bashrc'      # re-source this file
+  4 alias svim='source ~/.vimrc'        # source vimrc
+  5 
+  6 alias vvim='vim ~/.vimrc'           # open vimrc
+  7 alias vbash='vim ~/.bashrc'         # open bashrc 
+  8 
+  9 alias ls='ls -G'    # add colors
+ 10 alias la='ls -a'    # show all
+ 11 alias ll='ls -l'    # long list 
+ 12 alias lt='ls -l -t' # long list sorted by date
+ 13 alias c='clear'
+ 14 
+ 15 # Some Homebrew aliases
+ 16 # I think this will run all of the below, not sure about brew doctor
+ 17 # brew update  - Fetch the newest version of Homebrew and all formulae
+ 18 # brew upgrade - upgrade outdated formulae
+ 19 # brew prune   - remove dead symlinks from Homebrew prefix
+ 20 # brew doctor  - check for potential problems
+ 21 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew
+ 22 doctor'
+ 23 
+ 24 # Remove duplicate history entries
+ 25 export HISTCONTROL=ignoreboth:erasedups # this line works
+ 26 
+ 27 # Joes Macbook Air(blue) | jpm(purple) | colon(default) | ~(purple) | $(default)
+ 28 export PS1="\[\033[1;34m\n\h\[\033[0m\] \[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\    ]\W\[\033[0m\]$ "
+ 29 
+ 30 # color chart is below
+ 31 txtblk='\e[0;30m' # Black - Regular
+ 32 txtred='\e[0;31m' # Red
+ 33 txtgrn='\e[0;32m' # Green
+ 34 txtylw='\e[0;33m' # Yellow
+ 35 txtblu='\e[0;34m' # Blue
+ 36 txtpur='\e[0;35m' # Purple
