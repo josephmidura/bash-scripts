@@ -1,5 +1,5 @@
 # define terminal colors
-# need to check on new monitor
+# need to check on new macbook
 
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
