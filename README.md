@@ -1,1 +1,1 @@
-# I should put the settings files another place
+# some of the scripts I like in new environments
