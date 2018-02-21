@@ -1,1 +1,2 @@
-# favorite aliases (not sure this is actually useful)
+# favorite aliases 
+# keep in .bashrc for now
