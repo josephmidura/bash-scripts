@@ -162,4 +162,3 @@ if [ "${DO_SCRIPT_COMMENT_COUNT}" == "true" ] ; then
 	echo " Script Comment lines: ${SCRIPT_COMMENTS}"
 fi
 echo
-
