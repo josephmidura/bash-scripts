@@ -54,4 +54,3 @@ echo -e "\033[47m\033[36m Cyan \033[0m\
 echo -e "\033[47m\033[1;36m Light Cyan \033[0m\
 1;36m \
 \033[40m\033[1;36m Light Cyan \033[0m"
-
