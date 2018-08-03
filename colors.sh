@@ -5,6 +5,8 @@
 # backgrounds, with the code in the middle. Verified to work on white,
 # black, and green backgrounds.
 #
+# this is incredibly useful
+#
 echo " On Light Gray: On Black:"
 echo -e "\033[47m\033[1;37m White \033[0m\
 1;37m \

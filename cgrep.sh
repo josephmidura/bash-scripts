@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# useful
 
 # cgrep - grep with context display and highlighted pattern matches
 
