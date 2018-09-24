@@ -1,6 +1,7 @@
 #!/bin/bash
 # I should update and use this more often   
 # 
+echo 'this will update homebrew'
 brew update      # update local base of available packages and versions
 brew upgrade     # install new versions of outdated packages        
 brew cleanup -s  # keep only linked versions of software
