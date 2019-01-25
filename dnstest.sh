@@ -2,8 +2,7 @@
 
 #http://osxdaily.com/2018/04/09/how-use-cloudflare-dns-mac/
 
-# To run use line below:
-#bash ./dnstest.sh |sort -k 22 -n
+# To run use: bash ./dnstest.sh |sort -k 22 -n
 
 command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit 1; }
 { command -v drill > /dev/null && dig=drill; } || { command -v dig > /dev/null && dig=dig; } || { echo "dig was not found. Please install dnsutils."; exit 1; }
@@ -25,6 +24,7 @@ PROVIDERS="
 176.103.130.132#adguard 
 156.154.70.3#neustar 
 8.26.56.26#comodo
+91.239.100.100#UncensoredDNS
 "
 
 # Domains to test. Duplicated domains are ok
