@@ -1,0 +1,10 @@
+#!/bin/bash
+# 
+echo 'Updating local base of available packages and versions...'
+brew update       # update local base of available packages and versions
+echo 'Install new versions of outdated packages...'
+brew upgrade      # install new versions of outdated packages        
+echo 'Cleaning up...'
+brew cleanup      # cache cleanup of unfinished downloads
+echo 'Running diagnostics...'
+brew doctor       # show problems
