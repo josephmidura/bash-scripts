@@ -1,17 +1,20 @@
 #!/bin/bash
 #
 # useful little script I wrote to have fun while updating homebrew
+# 
+# last update 12/29/20
+#
 
 printf "\n\033[1;35mUpdating homebrew from bash script on $(date)..."
 
 printf "\nUpdating local base of available packages and versions..."
 brew update       # update local base of available packages and versions
 
-echo "install new versions of outdated packages..."
+printf "\ninstalling new versions of outdated packages..."
 brew upgrade      # install new versions of outdated packages        
 
-echo "running brew cleanup to clean cache of unfinished downloads..."
+printf "\ncleaning cache of unfinished downloads..."
 brew cleanup      # cache cleanup of unfinished downloads
 
-echo "running brew doctor..."
+printf "\nrunning brew doctor..."
 brew doctor       # show problems if any
