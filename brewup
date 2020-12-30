@@ -4,8 +4,6 @@
 # 
 # last update 12/29/20
 #
-# https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-e    cho-in-linux
-
 LIGHTPURPLE='\033[1;35m'
 
 printf "\n${LIGHTPURPLE}Updating homebrew from bash script on $(date)..."
@@ -19,5 +17,5 @@ brew upgrade      # install new versions of outdated packages
 printf "\n${LIGHTPURPLE}cleaning cache of unfinished downloads..."
 brew cleanup      # cache cleanup of unfinished downloads
 
-printf "\n${LIGHTPURPLE}running brew doctor..."
+printf "\n${LIGHTPURPLE}running brew doctor in case there are issues..."
 brew doctor       # show problems if any
