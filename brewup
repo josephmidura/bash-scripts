@@ -2,20 +2,19 @@
 #
 # useful little script I wrote to have fun while updating homebrew
 # 
-# last update 12/29/20
+# last update 12/31/20
 #
-LIGHTPURPLE='\033[1;35m'
+COLORTEXT='\033[1;34m' # light blue
 
-printf "\n${LIGHTPURPLE}Updating homebrew from bash script on $(date)..."
+printf "${COLORTEXT}Updating homebrew on $(date)..."
 
-printf "\n\n${LIGHTPURPLE}Updating local base of available packages and versions..."
+printf "\n${COLORTEXT}Updating local base of available packages and versions..."
 brew update       # update local base of available packages and versions
 
-printf "\n${LIGHTPURPLE}installing new versions of outdated packages..."
 brew upgrade      # install new versions of outdated packages        
 
-printf "\n${LIGHTPURPLE}cleaning cache of unfinished downloads..."
+printf "${COLORTEXT}Cleaning cache of unfinished downloads...\n"
 brew cleanup      # cache cleanup of unfinished downloads
 
-printf "\n${LIGHTPURPLE}running brew doctor in case there are issues..."
+printf "${COLORTEXT}Running brew doctor in case there are issues...\n"
 brew doctor       # show problems if any
