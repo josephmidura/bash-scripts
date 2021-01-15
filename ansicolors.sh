@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# last update 12/31/20
+# last update 1/15/21
 
-# Use these variables to easily have different color
-#    and format output. Make sure to output the reset sequence after 
-#    colors (f = foreground, b = background), and use the 'off'
-#    feature for anything you turn on.
+# Use these variables to easily have different color and format
+# output. Make sure to output the reset sequence after colors
+# (f = foreground, b = background), and use the 'off' feature 
+# for anything turned on.
 
 # initialize (f = foreground, b = background)
 initializeANSI()
@@ -34,8 +34,8 @@ initializeANSI()
 initializeANSI
 
 cat << EOF
-${yellowf}This is a phrase in yellow${redb} and red${reset}
-${boldon}This is bold${ulon} this is underlined${reset} bye bye
+${yellowf}This is a phrase in yellow ${redb}and also red${reset} text reset
+${boldon}This is bold ${ulon}this is underlined${reset} text reset
 ${ulon}This is ul${uloff} and this is not
 ${italicson}This is italics${italicsoff} and this is not
 ${invon}This is inv${invoff} and this is not
