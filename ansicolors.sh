@@ -36,9 +36,9 @@ initializeANSI
 cat << EOF
 ${yellowf}This is a phrase in yellow ${redb}and also red${reset} text reset
 ${boldon}This is bold ${ulon}this is underlined${reset} text reset
-${ulon}This is ul${uloff} and this is not
+${ulon}This is underlined${uloff} and this is not
 ${italicson}This is italics${italicsoff} and this is not
-${invon}This is inv${invoff} and this is not
-${yellowf}${redb}Warning I${yellowb}${redf}Warning II${reset}
+${invon}This is inverted${invoff} and this is not
+${yellowf}${redb}Warning I Style${yellowb}${redf}Warning II Style${reset}
 EOF
 
