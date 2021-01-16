@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# last update 1/15/21
+# last update 1/16/21
 
 # Use these variables to easily have different color and format
 # output. Make sure to output the reset sequence after colors
-# (f = foreground, b = background), and use the 'off' feature 
-# for anything turned on.
+# (f = foreground, b = background), and use the 'off' feature for
+# anything turned on.
 
 # initialize (f = foreground, b = background)
 initializeANSI()
@@ -29,7 +29,7 @@ initializeANSI()
 }
 
 # note in this first use that switching colors doesn't require a reset
-# first - the new color overrides the old one.
+# because the new color overrides the old one.
 
 initializeANSI
 
