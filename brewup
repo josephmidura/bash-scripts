@@ -1,20 +1,27 @@
 #!/bin/bash
 #
-# useful little script I wrote to have fun while updating homebrew
+# Useful little script I wrote to have fun while updating homebrew
 # 
-# last update 12/31/20
-#
-COLORTEXT='\033[1;34m' # light blue
+# last update 03/20/21
+
+#https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux#
+
+# Light blue
+COLORTEXT='\033[1;34m'
 
 printf "${COLORTEXT}Updating homebrew on $(date)..."
 
+# Update local base of available packages and versions
 printf "\n${COLORTEXT}Updating local base of available packages and versions..."
-brew update       # update local base of available packages and versions
+brew update
 
-brew upgrade      # install new versions of outdated packages        
+# Install new versions of outdated packages        
+brew upgrade
 
+# Cache cleanup of unfinished downloads
 printf "${COLORTEXT}Cleaning cache of unfinished downloads...\n"
-brew cleanup      # cache cleanup of unfinished downloads
+brew cleanup
 
-printf "${COLORTEXT}Running brew doctor in case there are issues...\n"
-brew doctor       # show problems if any
+# Show problems if any
+printf "${COLORTEXT}Checking for issues...\n"
+brew doctor
