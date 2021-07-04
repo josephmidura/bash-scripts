@@ -1,16 +1,14 @@
 #!/bin/bash
-#
-# Useful script I wrote to have fun while updating homebrew
-# 
-# last update 06/24/21
 
-# Light blue looks good with my colorscheme
+# Useful script I wrote to have fun while updating homebrew
+#
+# Last update 07/03/21
+
+# Light blue looks good with my current colorscheme
 TEXTCOLOR='\033[1;34m'
 
-printf "${TEXTCOLOR}Now updating homebrew..."
-
-# Update local base of available packages and versions
-printf "\n${TEXTCOLOR}Updating local base of available packages and versions..."
+# Update homebrew, and local base of available packages and versions
+printf "\n${TEXTCOLOR}Updating homebrew and local base of available packages and versions..."
 brew update
 
 # Install new versions of outdated packages
